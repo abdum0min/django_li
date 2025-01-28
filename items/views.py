@@ -40,4 +40,4 @@ def delete_item(request,pk):
     if request.method == 'POST':
         item.delete()
         return redirect('item_list')
-    return render(request,'item_confirm_delete.html',{'item':item})
+    return render(request,'item_delete.html', {'item':item})
